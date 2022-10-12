@@ -4,6 +4,13 @@
 
 weka 实验
 
+数据降维，分类，聚类
+weka data
+
+- dimension reduction
+- classification
+- cluster
+
 数据集
 
 | 任务 | 项目路径                     |
