@@ -23,10 +23,10 @@ public class Titanic_PCAFilter {
 
         AttributeSelection filter = new AttributeSelection();
         Ranker ranker = new Ranker();
-        ranker.setNumToSelect(5);
-        PrincipalComponents pc = new PrincipalComponents();
+        ranker.setNumToSelect(3);
+        PrincipalComponents pca = new PrincipalComponents();
         filter.setSearch(ranker);
-        filter.setEvaluator(pc);
+        filter.setEvaluator(pca);
         filter.setInputFormat(instances);
 
         //generate new data
@@ -34,7 +34,7 @@ public class Titanic_PCAFilter {
         saveDataSet(newData);
 
         //show PCA
-        System.out.println(pc);
+        System.out.println(pca);
     }
 
     private static void saveDataSet(Instances dataset) throws IOException {
